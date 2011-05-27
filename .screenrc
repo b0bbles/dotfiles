@@ -1,0 +1,10 @@
+# Config file for GNU Screen
+
+startup_message off		# Disable welcome message
+altscreen on			# Clear editor/pager
+term screen-256color
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= bw}[ %H ]%= %-w %{+u R}%n %t%{-u w} %+w %=[ %d-%m-%Y %{R} %c %{w}]'
+screen -t zsh 0 zsh
+#select 0
